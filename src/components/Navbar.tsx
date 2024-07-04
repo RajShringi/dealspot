@@ -10,12 +10,6 @@ export default function Navbar() {
     <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       {/* MOBILE NAVIGATION */}
       <nav className="p-4 flex items-center justify-between bg-white h-20 relative sm:hidden">
-        <Link href="/" className="flex items-center gap-2 cursor-pointer">
-          <ShoppingCart className="text-icon" />
-          <span className="font-semibold uppercase tracking-wider text-lg">
-            Dealspot
-          </span>
-        </Link>
         <MobileMenu />
       </nav>
       {/* DESKTOP NAVIGATION */}
