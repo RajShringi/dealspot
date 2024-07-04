@@ -8,7 +8,7 @@ export default function MobileMenu() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed  top-0 left-0 right-0 bg-white">
+    <div className="fixed  top-0 left-0 right-0 bg-white z-20">
       <div className="p-4 flex items-center justify-between bg-white h-20">
         <Link href="/" className="flex items-center gap-2 cursor-pointer">
           <ShoppingCart className="text-icon" />
