@@ -83,10 +83,10 @@ export default function Slider() {
           <div
             key={slide.id}
             onClick={() => handleClick(index)}
-            className="w-3 h-3 ring-1 ring-gray-100 rounded-full flex items-center justify-center"
+            className="w-3 h-3 ring-1 ring-gray-600 rounded-full flex items-center justify-center"
           >
             {current === index ? (
-              <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+              <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
             ) : (
               ""
             )}
