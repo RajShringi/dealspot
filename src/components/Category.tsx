@@ -29,7 +29,7 @@ export default async function Category() {
             <div className="flex flex-col gap-2 items-start py-2 px-4">
               <h3 className="font-semibold text-lg">{category.title}</h3>
               <p className="text-sm text-pretty">{category.description}</p>
-              <Link href={`/category/${category.slug}`}>
+              <Link href={`/productList/${category.slug}`}>
                 <Button variant={"link"} className="p-0">
                   explore
                 </Button>
