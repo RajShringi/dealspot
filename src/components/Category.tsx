@@ -16,7 +16,7 @@ export default async function Category() {
         {categories.map((category, index) => (
           <div
             key={category._id}
-            className={`w-full lg:w-[30%] rounded-lg bg-white shadow-md flex flex-col gap-2 overflow-hidden transition-all ease-in-out hover:scale-125 hover:z-10`}
+            className={`w-full lg:w-[30%] rounded-lg bg-white shadow-md flex flex-col gap-2 overflow-hidden transition-all ease-in-out hover:scale-110 hover:z-10`}
           >
             <div className="relative w-full h-[150px]">
               <Image
