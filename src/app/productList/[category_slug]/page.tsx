@@ -46,7 +46,7 @@ export default async function page({ params }: Props) {
 function Product({ product }: { product: ProductType }) {
   return (
     <Link
-      href={`/prdocut/${product.slug}`}
+      href={`/productDetail/${product.slug}`}
       className="w-full sm:w-[45%] lg:w-[22%] bg-white shadow-md rounded-lg overflow-hidden cursor-pointer transition-all ease-in-out hover:scale-110 hover:z-10"
     >
       <div className="relative h-[200px]">
