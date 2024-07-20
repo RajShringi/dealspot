@@ -45,7 +45,7 @@ export default async function ProductDetail({ params }: Props) {
               components={myPortableTextComponents}
             />
           </div>
-          <AddToCart price={product.price} />
+          <AddToCart product={product} />
           {/* DELIVERY OPTIONS */}
           <div className="flex flex-col gap-2">
             <h3 className="uppercase font-semibold tracking-wide flex gap-2 ">
