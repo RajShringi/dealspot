@@ -6,11 +6,13 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import CartModal from "./CartModal";
+import { useCart } from "@/context/CartContext";
 
 export default function NavIcons() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const router = useRouter();
+  const { cart } = useCart();
   const isLoggedIn = true;
 
   const handleProfile = () => {
@@ -39,7 +41,7 @@ export default function NavIcons() {
         onClick={() => setIsCartOpen((prev) => !prev)}
       >
         <div className="absolute w-5 h-5 text-sm text-white flex items-center justify-center rounded-full bg-pink-400 z-30 left-[50%] -top-3">
-          1
+          {cart.length}
         </div>
         <ShoppingBag className="text-icon" />
       </div>
